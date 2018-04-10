@@ -55,4 +55,18 @@
 			<artifactId>pagehelper</artifactId>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<!-- maven默认不编译xml映射文件，添加配置编译xml -->
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+
 </project>
