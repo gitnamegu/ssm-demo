@@ -24,5 +24,6 @@ public class UserController {
 	@RequestMapping(value="/insert",method=RequestMethod.POST)
 	public Map<String,Object> insertUser() {
 		return this.userService.insertUser();
+
 	}
 }
